@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ======================== header =========================== */
+
+:root{
+    --font-titulo: 'Lobster', cursive;
+    --font-texto: 'Carattere', cursive;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to left,darkorange, #d23303);
+    font-family: var(--font-titulo);
+    padding: 0 5.2rem;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px rgb(241, 237, 233);
+    z-index: 2;
+    
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: rgb(13, 227, 235);
+    transition: all 0.3s;
+    text-shadow: 0 0 5px black ;
+}
+
+header h1:hover{
+    transform: scale(1.04);
+    text-shadow: 0 0 1px rgb(245, 160, 1) ;
+    cursor: pointer;
+}
+
+header h1 span{
+    color: darkorange;
+}
+
+nav{
+    width: 20.5rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    font-size: 1.7rem;
+    
+
+}
+
+header nav ul a{
+    color: rgb(20, 221, 228);
+    text-shadow: 0 0 5px black;
+    transition: all 0.3s;
+}
+
+header nav ul a:hover{
+    color: darkorange;
+    transform: scale(1.08) ;
+    text-shadow: 0 0 2px wheat ;
+
+}
+
+
+
+
+/* ======================== main =========================== */
+
+main{
+    font-family: var(--font-texto);
+    font-size: 2rem;
+    text-shadow: 0 0 5px black;
+    overflow: hidden;
+    background:  black;
+
+
+
+}
+
+section#banner{
+    background: url(./img/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    color: darkorange;
+
+
+    
+}
+
+section div.descricao{
+    width: 38%;
+    padding: 0.625rem;
+    text-align: center;
+    background: rgba(202, 16, 9, 0.842);
+    color: honeydew;
+    text-shadow: 0 0 5px black;
+    border-radius: 10px;
+    position: relative;
+    left: 5rem;
+    top: 21rem;
+    border: 3px solid #2E95BA;
+    box-shadow: 0 0 5px wheat;
+}
+
+section div.descricao h2{
+    color: peachpuff;
+}
+
+hr{
+    display: block;
+    background: purple;
+    height: 5px;
+    background: linear-gradient(to right, #2E95BA, #E93635);
+
+}
+
+
+div.container{
+    display: flex;  
+    margin: auto;
+}
+
+
+section.padrao{
+    height: 560px;
+    padding: 20px;
+    text-align: center; 
+    transition: all 0.5s;
+   
+}
+
+section.padrao:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    text-shadow: 0 0 5px wheat;
+}
+
+section.padrao h2, section.padrao p{
+    padding-top: 66px;
+    color: #F9B701;
+}
+
+
+
+
+section.caipiroska{
+    background: url(https://www.dicasdemulher.com.br/wp-content/uploads/2021/04/drinks-de-morango-00.png) no-repeat center/cover ;
+    transition: background-color  0.5s, background-blend-mode 0.5s ; 
+    
+}
+
+
+section.mojito{
+    background: url(https://www.comidanamesa.com.br/wp-content/uploads/2020/08/drink-L%C3%AA-P%C3%A8re-Spritz.jpg) no-repeat center/cover;
+
+}
+
+section.dry_martini{
+    background: url(https://conteudo.imguol.com.br/c/entretenimento/48/2020/07/23/prove-o-umami-com-uma-dica-esperta-em-seu-dry-martini-1595526331698_v2_1x1.jpg)  center/cover;
+}
+
+section.blue_lagon{
+    background: url(https://image.freepik.com/fotos-gratis/lagoa-azul-cocktail-com-fatias-de-gelo-kiwi-e-maca_114579-3476.jpg)  center/cover;
+}
+
+section.apple_martini{
+    background: url(https://www.receiteria.com.br/wp-content/uploads/como-fazer-licor-de-menta-0.jpg) center/cover;
+}
+
+section.vodka_sunrise{
+    background: url(https://cooknenjoy.com/wp-content/uploads/2016/10/screwdriver.jpg) center/cover;
+}
+/* ======================== footer =========================== */
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(100deg, crimson, wheat, blueviolet) ;
+    box-shadow: 0 0 5px black;
+    color: rgb(4, 17, 17);
+}
